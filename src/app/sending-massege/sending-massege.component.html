@@ -1,0 +1,38 @@
+<div class="content_card">
+    <mat-card class="example-card">
+       <mat-card-header>
+         <div mat-card-avatar class="example-header-image"></div>
+         <mat-card-title style="color: #ff4081">send massege</mat-card-title>
+       
+       </mat-card-header>
+       
+       <mat-card-content>
+<div class="example-container">
+    <form>
+        <mat-form-field appearance="fill">
+            <mat-label>your name</mat-label>
+            <input matInput #name>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required #adressEmail>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>subject</mat-label>
+            <input matInput #subject>
+          </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>content</mat-label>
+        <textarea matInput #content></textarea>
+      </mat-form-field></form>
+  </div>
+</mat-card-content>
+<mat-card-actions>
+  <button mat-raised-button color="accent" (click)="addCar(name,adressEmail,subject,content)"> <div class="icon-text">
+    <mat-icon>send</mat-icon>
+    <span>send messege</span>
+ </div></button>
+</mat-card-actions>
+</mat-card></div>

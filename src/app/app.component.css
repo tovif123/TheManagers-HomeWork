@@ -1,0 +1,8 @@
+.mat-tab-linq {
+    color:#ff4081 !important;
+} 
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #ff4081 !important;
+
+    color:#ff4081 !important;
+}
